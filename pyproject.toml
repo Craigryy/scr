@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "scripturesandpower"
+version = "0.1.0"
+description = "Empower believers to demonstrate"
+authors = ["samuelvarejames <samuelvarejames@gmail.com>"]
+license = "GNU General Public License v3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.2.5"
+wagtail = "^5.1.1"
+psycopg2-binary = "^2.9.7"
+dj-database-url = "^2.1.0"
+gunicorn = "^21.2.0"
+whitenoise = "^6.5.0"
+flake8 = "^3.9.2"
+autopep8 = "^1.5.7"
+pylint = "^2.9.3"
+django-debug-toolbar = "^4.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

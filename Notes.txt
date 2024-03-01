@@ -1,0 +1,65 @@
+Setup steps
+
+pip install poetry
+poetry init (only the first time)
+poetry install
+
+poetry show
+poetry env info
+
+Reference: https://docs.wagtail.org/en/stable/getting_started/tutorial.html
+
+wagtail start script 
+cd script && python manage.py migrate
+python manage.py createsuperuser (pw: nimdascript)
+python manage.py runserver
+
+
+# From the root directory
+export SQLITE=True
+poetry run script/manage.py makemigrations
+poetry run script/manage.py migrate
+poetry run script/manage.py runserver
+
+# Using Docker
+docker-compose up
+
+# navigate to 
+script.docker.localhost
+
+
+# Makefile
+For automating simple tasks, a Makefile is provided.
+make run    #Start development server 
+make stop         : Stop the Docker containers"
+make teardown     : Stop and remove the Docker containers and associated volumes"
+make network      : View the Docker network"
+make navigate     : Navigate to script.docker.localhost"
+make start_docker : Start the Docker app"
+make build        : Build Docker containers"
+
+
+reference for self documented Makefile
+https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
+
+https://www.shecodes.io/athena/4719-css-how-to-add-a-hover-effect-to-list-elements#:~:text=To%20add%20a%20hover%20effect%20to%20a%20list%20elements%20in,mouse%20is%20hovering%20over%20them.
+
+##############################################
+<a href="https://www.flaticon.com" title="clubhouse icons">icons created by Freepik - Flaticon</a>
+
+##############################################
+Reference: https://fontawesome.com/docs/web/use-with/python-django
+
+
+########### Heroku:Scriptures&James ###############
+Log in
+
+heroku login (Ask for Login details: scripturesandpower@gmail.com)
+heroku git:remote -a scriptures
+heroku stack:set container
+
+git push heroku main:main
+heroku config:set
+
+heroku update beta?
+heroku plugins:install @heroku-cli/plugin-manifest?

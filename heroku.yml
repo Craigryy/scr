@@ -1,0 +1,19 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+      as: DATABASE
+build:
+  docker:
+    web: ./Dockerfile.heroku
+  config:
+    BUILD_ENV: production
+    DJANGO_SETTINGS_MODULE: script.settings.production
+release:
+  image: web
+  command:
+  - |
+    python script/manage.py makemigrations
+    python script/manage.py migrate
+    echo "from django.contrib.auth.models import User; User.objects.filter(email='useradmin@example.com').delete(); User.objects.create_superuser('useradmin', 'useradmin@example.com', 'nimdaresu')" | python script/manage.py shell
+run:
+  web: export DJANGO_SETTINGS_MODULE=script.settings.production && gunicorn script.wsgi:application --bind 0.0.0.0:$PORT --workers 3 --pythonpath=script --log-file -

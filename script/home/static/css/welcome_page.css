@@ -1,0 +1,282 @@
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    color: #231f20;
+    line-height: 0.75;
+    padding-top: 100px; 
+    padding-bottom: 70px;
+}
+
+.bg-height {
+    height: 80vh;
+    margin: 0 20px;
+}
+
+.sub-col {
+    background-color: #181818;
+}
+
+.intro {
+    background-image: url("/static/images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    color: #FFFFFF !important;
+    background-color: gold;
+    cursor: pointer;
+}
+
+blockquote {
+    font-size: 1.5em;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    align-self: flex-end;
+}
+
+.em-dash-before:before {
+    color: var(--dim-yellow);
+    content: "— ";
+}
+
+/* Apply the font to your "Welcome to Scriptures and Power" text */
+.welcome-text {
+    font-family: 'Roboto Condensed', sans-serif; /* Use the custom font-family */
+    font-weight: 500; /* Medium weight */
+    font-size: 14px; /* Font size of 14 pixels */
+    color: var(--dim-yellow);
+}
+
+/* Apply the font to your main text header */
+.main-header {
+    font-family: 'Roboto Condensed', sans-serif; /* Use the custom font-family */
+    font-weight: 700; /* Bold weight */
+    font-size: 48px; /* Font size of 48 pixels */
+    color: var(--header-text);
+}
+
+  /* Apply the font to your text */
+.sub-text {
+    font-family: 'Roboto Serif', serif; /* Use the custom font-family */
+    font-weight: 400; /* Regular weight */
+    font-size: 16px; /* Font size of 16 pixels */
+    color: var(--header-text);
+    line-height: normal;
+}
+
+/* Apply the font to your "LEARN MORE" text */
+.learn-more {
+    font-family: 'Roboto Condensed', sans-serif; /* Use the custom font-family */
+    font-weight: 500; /* Medium weight */
+    font-size: 14px; /* Font size of 14 pixels */
+    color: var(--header-text);
+    
+}
+
+/* Apply the font to your Scripture verse text */
+.scripture-verse {
+    font-family: 'Roboto Condensed', sans-serif; /* Use the custom font-family */
+    font-weight: 700; /* Bold weight */
+    font-size: 20px; /* Font size of 20 pixels */
+    color: var(--header-text);
+    line-height: normal;
+}
+
+.lm-btn {
+    background-color: var(--dim-yellow);
+    padding: 20px 35px; /* Increase padding for button size */    
+    width: 130px;
+    border-radius: 10px
+}
+
+.foot-icon {
+    margin: 20px;
+    margin-bottom: -50px;
+}
+
+.footer-icon {
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 1920px) {
+    .intro {
+        background-image: url("/static/images/1920_background.png");
+        background-position: top center; /* Adjust position if needed */
+        height: 80vh;
+    }
+
+    .bg-height {
+        height: 80vh;
+    }
+
+    .foot-icon {
+        margin: 20px;
+        margin-bottom: -50px;
+    }
+    
+}
+
+@media (max-width: 1440px) {
+    .intro {
+        background-image: url("/static/images/1440_background.png");
+        background-position: top center; /* Adjust position if needed */
+    }
+
+    .foot-icon {
+        margin: 20px;
+        margin-bottom: -50px;
+    }
+    
+}
+
+@media (max-width: 1366px) {
+    .intro {
+        background-image: url("/static/images/1366_background.png");
+        background-position: top center; /* Adjust position if needed */
+    }
+
+    .foot-icon {
+        margin: 20px;
+        margin-bottom: -50px;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .intro {
+        background-image: url("/static/images/1024_background.png");
+        background-position: top center;
+    }
+
+    .foot-icon {
+        margin: 20px;
+        margin-bottom: -50px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .intro {
+        background-image: url("/static/images/768_background.png");
+        background-position: top center;
+    }
+}
+
+@media (max-width: 414px) {
+    .intro {
+        background-image: url("/static/images/414_background.png");
+        background-position: top center;
+        padding-top: 30px;  /* Adjust based on the height of your navbar */
+        padding-bottom: 70px;
+        height: 70vh;
+    }
+
+    .bg-height {
+        height: 70vh;
+    }
+
+    .foot-icon {
+        margin: 20px;
+        margin-bottom: -50px;
+    }
+    
+    .footer-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 375px) {
+    .intro {
+        background-image: url("/static/images/375_background.png");
+        background-position: top center;
+        padding-top: 30px;
+        padding-bottom: 70px;
+        height: 90vh;
+    }
+
+    .bg-height {
+        height: 90vh;
+    }
+
+    .foot-icon {
+        margin: 20px;
+        margin-bottom: -50px;
+    }
+    
+    .footer-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .intro {
+        background-image: url("/static/images/320_background.png");
+        background-position: top center;
+        padding-top: 30px;
+        padding-bottom: 70px;
+        height: 100vh;
+    }
+
+    .bg-height {
+        height: 100vh;
+    }
+
+    .foot-icon {
+        margin: 20px;
+        margin-bottom: -50px;
+    }
+    
+    .footer-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 280px) {
+    .intro {
+        /* 280 * 653 needed here: exact value 280 by 650 */
+        /* background-image: url("/static/images/280_background.png"); */
+        background-position: top center;
+        padding-top: 30px;
+        padding-bottom: 170px;
+        height: 100vh;
+    }
+
+    .bg-height {
+        height: 100vh;
+    }
+
+    .foot-icon {
+        margin: 20px;
+        margin-bottom: -50px;
+    }
+    
+    .footer-icon {
+        width: 60px;
+        height: 60px;
+    }
+}

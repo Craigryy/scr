@@ -1,0 +1,61 @@
+:root {
+    --header-text: #FFFFFF;
+    --dim-yellow: #9B781B;
+  }
+
+
+/* Apply the font to your header navigation */
+.header-navigation {
+  font-family: 'Roboto Condensed', sans-serif; /* Use the custom font-family */
+  font-weight: 400; /* Regular weight */
+  font-size: 16px; /* Font size of 16 pixels */
+  color: var(--header-text);
+}
+
+.header {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.size {
+  padding: 14px 35px;
+  width: 120px;
+  border-radius: 10px;
+}
+
+
+nav ul {
+  gap: 5px;
+}
+
+nav ul li .nav-col {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.navbar-toggler {
+  background-color: #817f7b;
+  border: 1px solid #ffc107;
+  filter: brightness(0.5);
+  margin-right: 20px;
+}
+
+.center-txt {
+  text-align: center;
+}
+
+
+.btn-outline-warning {
+  border-color: transparent;
+  color: #ffc107;
+}
+
+
+.btn-outline-warning:hover {
+  color: #FFFFFF !important;
+  border-color: #ffc107 !important;
+  background-color: transparent !important; 
+}
+
+

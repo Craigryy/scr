@@ -1,0 +1,53 @@
+{% load static i18n wagtailcore_tags %}
+
+{% include "snippet_header.html" %}
+
+<!-- Main content area -->
+<div class="container-fluid bg-image-class sub-col intro"> <!-- Assuming bg-image-class sets your background image -->
+    <div class="row align-items-center bg-height"> <!-- vh-100 makes it take the full height of the viewport -->
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-8">
+                <p class="welcome-text"> WELCOME TO SCRIPTURES AND POWER</p>
+                <h1 class="main-header">EMPOWERING</h1> 
+                <h2 class="main-header">BELIEVERS TO DEMONSTRATE.</h2>
+                <p class="sub-text">Demonstrating God's Power In Your Sphere While</p>
+                <p class="sub-text">Advancing In Christ's Knowledge.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <a href="/topics" target="_blank">
+                    <button class="btn btn-outline-warning learn-more lm-btn">LEARN MORE</button>
+                </a>
+
+                <blockquote class="scripture-verse">
+                    <p>For The Kingdom Of God Is Not In Words But In Power</p>
+                    <cite><span class="em-dash-before"></span>1 Cor. 4:20</cite>
+                </blockquote>
+            </div>
+        </div>
+        
+        <div class="row">
+        </div>
+    </div>
+</div>
+
+<!-- Icons at the bottom -->
+<div class="container-fluid">
+    <div class="row justify-content-center foot-icon">
+
+        <div class="col-2 align-item-center justify-content-center d-flex">
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/scripturesandpower/" target="_blank">
+                <img src="{% static 'images/instagram.png' %}" class="footer-icon" alt="Instagram Icon">
+            </a>
+        </div>
+        <div class="col-2 align-item-center justify-content-center d-flex">
+            <!-- Clubhouse Icon -->
+            <a href="https://www.clubhouse.com/house/scriptures-power" target="_blank">
+                <img src="{% static 'images/clubhouse.png' %}" class="footer-icon" alt="Clubhouse Icon">
+            </a>
+        </div>
+    </div>
+</div>
